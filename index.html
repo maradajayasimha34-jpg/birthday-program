@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +12,7 @@
    ✏️  EDIT ME — everything you need to personalize is here
    ========================================================= */
 :root{
-  --name: "Sree";                 /* shown in the headline (edit text directly below too) */
+  --name: "Navyaaluuuuu";           /* shown in the headline (edit text directly below too) */
 
   /* --- color tokens --- */
   --midnight:   #1b1030;
@@ -199,17 +198,24 @@ section{
   transition:transform .25s ease;
 }
 .memory-item:hover{ transform:translateY(-4px) scale(1.02); }
+.memory-item img, .memory-item video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
 .memory-item::before{
   content:""; position:absolute; inset:0;
-  background:linear-gradient(180deg,transparent 40%, rgba(0,0,0,.55));
+  background:linear-gradient(180deg,transparent 40%, rgba(0,0,0,.7));
+  z-index: 1;
 }
-.memory-item span{ position:relative; z-index:1; }
-.m1{ background-image:linear-gradient(135deg,#ffb6c1,#c9a4ff); }
-.m2{ background-image:linear-gradient(135deg,#a4d8ff,#ff9ecf); }
-.m3{ background-image:linear-gradient(135deg,#ffe29a,#ff8fc7); }
-.m4{ background-image:linear-gradient(135deg,#c1ffd7,#ff5fa2); }
-/* 👉 To use real photos, replace the background-image above (or add
-   background-image:url('your-photo.jpg') inline on the element) */
+.memory-item span{ position:relative; z-index:2; }
+
+.m1{ background-image: url('pic.1.jpeg'); }
+.m3{ background-image: url('pic.3.jpeg'); }
+.m4{ background-image: url('pic.4.jpeg'); }
 
 /* ================= SECTION 4 — BALLOONS ================= */
 #balloon-section{ background:linear-gradient(180deg,var(--midnight-2), var(--midnight)); }
@@ -270,7 +276,7 @@ section{
 <section id="hero">
   <div class="floaters" id="hero-floaters"></div>
   <p class="eyebrow" style="z-index:1;">A little something for you</p>
-  <h1>Happy Birthday, <span id="name-slot">Sree</span> 💫</h1>
+  <h1>Happy Birthday, <span id="name-slot">Navyaaluuuuu</span> 💫</h1>
   <p>Every moment with you is a celebration, but today is extra special.
      Here's a little birthday surprise made just for you — with love,
      laughter, and a few sweet memories along the way.</p>
@@ -312,10 +318,13 @@ section{
     <div class="memory-lane">
       <h3>📷 Our Memory Lane</h3>
       <div class="memory-grid">
-        <div class="memory-item m1"><span>Best Friend Adventures</span></div>
-        <div class="memory-item m2"><span>Late Night Chats</span></div>
-        <div class="memory-item m3"><span>Sunny Adventures</span></div>
-        <div class="memory-item m4"><span>Seasonal Snaps</span></div>
+        <div class="memory-item m1"><span>Cutiee Piee</span></div>
+        <div class="memory-item">
+          <video autoplay loop muted playsinline src="vid.1.mp4"></video>
+          <span>Crazy Stuff 📹</span>
+        </div>
+        <div class="memory-item m3"><span>Chaduvubidda</span></div>
+        <div class="memory-item m4"><span>Best memory</span></div>
       </div>
     </div>
 
